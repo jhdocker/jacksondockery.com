@@ -1,0 +1,66 @@
+body{
+	
+	background-image:url('/static/graytex2.jpg');
+	background-attachment: fixed;
+	margin:0px;
+	color:white;
+}
+
+.main{
+	font-family: tahoma;
+	margin:0px 50px 0px 50px;
+	border-left:solid 1.3em #383838;
+	border-right:solid 1.3em #383838;
+	padding:40px;
+	background-color:#282828;
+	background-attachment: fixed;
+	color:#0099FF;
+	opacity: 0.9;
+
+}
+
+#thumbnail a img{
+	height:20%;
+	display:inline-block;
+	margin-right:20px;
+	border:solid 2px #383838;
+	opacity: 0.7;
+}
+#thumbnail a:hover img {
+	opacity:1.5;
+	
+	box-shadow: black .2em .2em .2em;
+}
+
+ul#contact{
+	list-style-type: none;
+	float:right;
+}
+
+#contact li a{
+	color:#c8c8c8;
+}
+#contact li{
+	color:#c8c8c8;
+}
+
+
+img.pic{
+	height:25%;
+	float:left;
+	margin-right:50px;
+	box-shadow: black 5px 5px 5px;
+	
+}
+
+#name{
+	font-size: 3.5em;
+	font-family: tahoma;
+}
+.titles{
+	color:#c8c8c8;
+}
+.entry p{
+	color:#c8c8c8;
+}
+
