@@ -1,6 +1,6 @@
 body{
 	
-	background-image:url('/static/metal_repeat.png') repeat;
+	background-image: url('/static/metal_repeat.png');
 	background-attachment: fixed;
 	margin:0px;
 	color:white;
