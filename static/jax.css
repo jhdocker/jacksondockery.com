@@ -1,6 +1,6 @@
 body{
 	
-	background-image:url('/static/graytex2.jpg');
+	background-image:url('/static/metal_repeat.png') repeat;
 	background-attachment: fixed;
 	margin:0px;
 	color:white;
