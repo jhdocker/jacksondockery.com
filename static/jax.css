@@ -5,6 +5,22 @@ body{
 	margin:0px;
 	color:white;
 }
+.hiddenText{
+	position:absolute;
+	top:35%;
+	right:10%;
+	left:40%;
+}
+.expandingTitle {
+	position:relative;	
+	width:200px;
+	text-align: center;
+	padding:3px 10px 3px 10px;
+	color:white; 
+	font-size: 1.5em;
+	text-shadow:black 0.1em 0.1em 0.2em;
+	cursor: pointer;
+}
 
 .main{
 	font-family: tahoma;
@@ -12,10 +28,11 @@ body{
 	border-left:solid 1.3em #383838;
 	border-right:solid 1.3em #383838;
 	padding:40px;
+	height:100%;
 	background-color:#282828;
 	background-attachment: fixed;
 	color:#0099FF;
-	opacity: 0.9;
+	opacity: 0.8;
 
 }
 
@@ -46,21 +63,30 @@ ul#contact{
 
 
 img.pic{
+	z-index:3;
 	height:25%;
 	float:left;
 	margin-right:50px;
 	box-shadow: black 5px 5px 5px;
-	
 }
 
 #name{
 	font-size: 3.5em;
 	font-family: tahoma;
+	text-shadow: black 0.1em 0.1em 0.2em;
 }
-.titles{
-	color:#c8c8c8;
+#subTitle{
+	font-family: tahoma;
+	text-shadow: black 0.1em 0.1em 0.2em;
 }
+
 .entry p{
+	color:white;
+}
+#footer{
 	color:#c8c8c8;
+	position:absolute;
+	bottom:1%;
+	right:80px;
 }
 

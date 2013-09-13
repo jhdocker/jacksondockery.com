@@ -1,5 +1,93 @@
-$def with (header, footer)
-$:header
+<html>
+<head>
+	<title>Jackson Dockery</title>
+	<link rel="stylesheet" type="text/css" href="static/jax.css">
+	<link rel="shortcut icon" href="static/favicon.ico" >
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		jQuery(document).ready(function(){	
+			jQuery('#objTitle').click(function(){
+				jQuery('.hiddenText').hide();	
+				jQuery('#objText').show('slow')
+			});
+			jQuery('#projTitle').click(function(){
+				jQuery('.hiddenText').hide();
+				jQuery('#projText').show('slow')
+			});
+
+			jQuery('#skillTitle').click(function(){
+				jQuery('.hiddenText').hide();
+				jQuery('#skillText').toggle('fast')
+			});
+			jQuery('#expTitle').click(function(){
+				jQuery('.hiddenText').hide();
+				jQuery('#expText').toggle('slow')
+			});
+			jQuery('#aboutTitle').click(function(){
+				jQuery('.hiddenText').hide();
+				jQuery('#aboutText').toggle('slow')
+			});
+			jQuery('#whyTitle').click(function(){
+				jQuery('.hiddenText').hide();
+				jQuery('#whyText').toggle('slow')
+			});
+			jQuery('.pic').mouseenter(function(){
+				jQuery(this).animate({
+					height:'+=200px'
+				});
+			});
+			jQuery('.pic').mouseleave(function(){
+				jQuery(this).animate({
+					height:'-=200px'
+				})
+			});
+			jQuery('#objTitle').mouseenter(function(){
+				jQuery('#objTitle').css('color', '#797979')
+			});
+			jQuery('#objTitle').mouseleave(function(){
+				jQuery('#objTitle').css('color', 'white')
+			});
+
+			jQuery('#projTitle').mouseenter(function(){
+				jQuery('#projTitle').css('color', '#797979')
+			});
+			jQuery('#projTitle').mouseleave(function(){
+				jQuery('#projTitle').css('color', 'white')
+			});
+
+			jQuery('#skillTitle').mouseenter(function(){
+				jQuery('#skillTitle').css('color', '#797979')
+			});
+			jQuery('#skillTitle').mouseleave(function(){
+				jQuery('#skillTitle').css('color', 'white')
+			});
+
+			jQuery('#expTitle').mouseenter(function(){
+				jQuery('#expTitle').css('color', '#797979')
+			});
+			jQuery('#expTitle').mouseleave(function(){
+				jQuery('#expTitle').css('color', 'white')
+			});
+
+			jQuery('#aboutTitle').mouseenter(function(){
+				jQuery('#aboutTitle').css('color', '#797979')
+			});
+			jQuery('#aboutTitle').mouseleave(function(){
+				jQuery('#aboutTitle').css('color', 'white')
+			});
+
+			jQuery('#whyTitle').mouseenter(function(){
+				jQuery('#whyTitle').css('color', '#797979')
+			});
+			jQuery('#whyTitle').mouseleave(function(){
+				jQuery('#whyTitle').css('color', 'white')
+			});
+
+		})
+			
+	</script>
+</head>
+<body>
 	
 	<div class = 'main'>
 		<img class="pic" src="/static/Jackson-Dockery.JPG">
@@ -9,38 +97,56 @@ $:header
 			<li>Greensboro, NC</li>
 		</ul>
 		<h1 id='name'>Jackson Dockery</h1>
-		<h2>Web Developer</h2>
+		<h2 id='subTitle'>Web Developer</h2>
 		<div class='entry'>
-			<h2>Objectives</h2>
-			<p>I am a self taught, highly motivated entry level web developer and python programmer. I am looking for an entry level job in the web development or Python programming world with a company that has room to grow and appreciates an employee that works hard and thrives in a learning environment.</p>
-			<h5>_______________________________________________________</h5>
-			<h2>Projects</h2>
-			<p> My latest projects.</p>
-			<div id='thumbnail'>	
-				<a href="https://jonnyhart.herokuapp.com" target='blank'><img src="static/jhd.png"></a>
-				<a href="https://trupoint.herokuapp.com" target='blank'><img src="static/tp.png"></a>
-				<a href=""><img src="static/ad.png"></a>
-			</div>	
-			<h5>_______________________________________________________</h5>
-			<h2>My Skills</h2>
-			<p><ul style='color:#C3C3C3'>
-				<li>Python 2.7</li>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>web.py</li>
-				<li>SQLite3</li>
-			</ul></p>
-			<h5>_______________________________________________________</h5>
-			<h2>Work experience</h2>
-			<p><strong>Novant Health</strong>: EVS Control Monitor 2008-2013<br/>My job at Novant was auditing the company that was contracted to clean Forsyth Hospital in Winston-Salem, NC. It required a high level of attention to detail, data collection and communication skills as I was expected to present my data to high level Novant leadership and contract company leadership</p>
-			<p><strong>Pauls Cycling and Fitness</strong>: Service Manager 2006-2008<br/>Service Manager included organizing and ordering stock, managing six employees and maintaining repair shop.</p>
-			<h5>_______________________________________________________</h5>
-			<h2>About me</h2>
-			<p>I am 31 years old, have been married for five years and love to be outdoors. I attended school at UNCG from 2003-2007 studying history. I recently was laid off from my hospital job of five years. Sensing my position being in jeopardy of elimination, I began to search for something that interested me that could also be a carreer change. I started learning Python programming language in 2012 and following my layoff in May, I began to apply myself to learning full time. I am now capable of building and maintaining websites that are built with Python, styled with CSS and pull from SQL databases. I am a self motivated, hard worker with great attention to detail. I thrive in a learning environment and come to work with plenty of enthusiasm to get the job done.</p>
-			<h5>_______________________________________________________</h5>
-			<h2>Why Should You Hire Me?</h2>
-			<p>If you have read my 'work history' and 'about me' sections, then you know I do not come to the table with experience. What I do have, is a strong work ethic, entry-level skills and determination. I will work my hardest to gain the knowlege and experience to be a proficient programmer/developer for your company. I have excellent communication skills both written and face to face. It's a leap for you to hire me with no prior experience, but it all comes down to the fact that I will do whatever it takes to enter this field of business.</p>
+			<p class='expandingTitle' id='objTitle'>Objectives</p>
+			<div class='hiddentext' id='objText'>
+				<h4>Objectives</h4>
+				<p>I am a self taught, highly motivated entry level web developer and python programmer. I am looking for an entry level job in the web development or Python programming world with a company that has room to grow and appreciates an employee that works hard and thrives in a learning environment.</p>
+				<h5>_______________________________________________________</h5>
+			</div>
+			<p class='expandingTitle' id='projTitle'>Projects</p>
+			<div class = 'hiddentext' id='projText' style='display:none'>
+				<h4> My latest projects.</h4>
+			    <div id='thumbnail'>	
+					<a href="https://jonnyhart.herokuapp.com" target='blank'><img src="static/jhd.png"></a>
+					<a href="https://trupoint.herokuapp.com" target='blank'><img src="static/tp.png"></a>
+					<a href=""><img src="static/ad.png"></a>
+				</div>
+			</div>		
+			<p class='expandingTitle' id='skillTitle'>Skills</p>
+			<div class='hiddentext' id='skillText' style='display:none'>
+				<h4>Skills</h4>
+				<p><ul style='color:#C3C3C3'>
+					<li>Python 2.7</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>jQuery</li>
+					<li>web.py</li>
+					<li>SQLite3</li>
+					<li>PostgresQl</li>
+				</ul></p>
+			</div>				
+			<p class='expandingTitle' id='expTitle'>Employment</p>
+			<div class='hiddenText' id='expText' style='display:none'>
+				<h4>Work Experience</h4>
+				<p><strong>Novant Health</strong>: EVS Control Monitor 2008-2013<br/>My job at Novant was auditing the company that was contracted to clean Forsyth Hospital in Winston-Salem, NC. It required a high level of attention to detail, data collection and communication skills as I was expected to present my data to high level Novant leadership and contract company leadership</p>
+				<p><strong>Pauls Cycling and Fitness</strong>: Service Manager 2006-2008<br/>Service Manager included organizing and ordering stock, managing six employees and maintaining repair shop.</p>
+			</div>
+			<p class='expandingTitle' id='aboutTitle'>About Me</p>
+			<div class='hiddenText' id='aboutText' style='display:none'>
+				<h4>About Me</h4>
+				<p>I am 31 years old, have been married for five years and love to be outdoors. I attended school at UNCG from 2003-2007 studying history. I recently was laid off from my hospital job of five years. Sensing my position being in jeopardy of elimination, I began to search for something that interested me that could also be a carreer change. I started learning Python programming language in 2012 and following my layoff in May, I began to apply myself to learning full time. I am now capable of building and maintaining websites that are built with Python, styled with CSS and pull from SQL databases. I am a self motivated, hard worker with great attention to detail. I thrive in a learning environment and come to work with plenty of enthusiasm to get the job done.</p>
+			</div>
+			<p class='expandingTitle' id='whyTitle'>Why Hire Me?</p>
+			<div class='hiddenText' id='whyText' style='display:none'>
+				<h4>Why Hire Me?</h4>
+				<p>If you have read my 'work history' and 'about me' sections, then you know I do not come to the table with experience. What I do have, is a strong work ethic, entry-level skills and determination. I will work my hardest to gain the knowlege and experience to be a proficient programmer/developer for your company. I have excellent communication skills both written and face to face. It's a leap for you to hire me with no prior experience, but it all comes down to the fact that I will do whatever it takes to enter this field of business.</p>
+			</div>
 		</div>
 	</div>
+	<p id='footer'>Thanks for visiting my site!
+</body>
+</html>
 
-$:footer
