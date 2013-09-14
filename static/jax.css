@@ -8,35 +8,40 @@ body{
 .hiddenText{
 	border:solid thin black;
 	border-radius: .6em 2.9em .6em 2.9em;
-	background-color: black;
-	opacity: 0.7;
+	background-color: #151515;
 	padding:20px;
 	position:absolute;
-	top:35%;
-	right:10%;
-	left:40%;
+	top:38%;
+	right:15%;
+	left:35%;
 }
+
 .expandingTitle {
 	position:relative;	
-	width:200px;
 	text-align: center;
 	padding:3px 10px 3px 10px;
 	color:white; 
-	font-size: 1.5em;
+	font-size: 1.2em;
 	text-shadow:black 0.1em 0.1em 0.2em;
 	cursor: pointer;
 	letter-spacing: .1em;
 }
+.titles{
+	border:solid thin black;
+	width: 170px;
+	border-radius: .5em;
+	background-color:#151515;
 
+
+}
 .main{
 	font-family: tahoma;
 	letter-spacing: .1em;
-	margin:0px 50px 0px 50px;
-	border-left:solid 1.3em #383838;
-	border-right:solid 1.3em #383838;
+	margin:30px;
+	box-shadow:black .3em .3em .1em;
 	padding:40px;
-	height:100%;
 	background-color:#282828;
+	height:83%;
 	background-attachment: fixed;
 	color:#0099FF;
 	opacity: 0.8;
@@ -85,6 +90,7 @@ img.pic{
 #subTitle{
 	font-family: tahoma;
 	text-shadow: black 0.1em 0.1em 0.2em;
+	margin-left: 130px;
 }
 
 .entry p{
